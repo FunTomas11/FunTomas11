@@ -8,8 +8,7 @@ const autoprefixer = require('gulp-autoprefixer')
 const rename       = require('gulp-rename')
 const imagemin     = require('gulp-imagemin')
 const newer        = require('gulp-newer')
-const rsync        = require('gulp-rsync')
-const del          = require('del')
+const del 				 = require('del')
 
 function browsersync() {
 	browserSync.init({
@@ -45,7 +44,7 @@ function scripts() {
 
 function styles() {
 	return src('app/styl/main.styl')
-	.pipe(styl({ outputStyle: 'compressed' }))
+	.pipe(styl({ compress: true }))
 	.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
 	.pipe(rename('app.min.css'))
 	.pipe(dest('app/css'))
@@ -59,23 +58,25 @@ function images() {
 	.pipe(dest('app/img/dest'))
 }
 
-function cleanimg() {
-	return del('app/img/dest/**/*', { force: true })
+
+function buildCopy() {
+	return src([
+		'app/css/**/*.min.css',
+		'app/js/**/*.min.js',
+		'app/img/dest/**/*',
+		'app/fonts/**/*',
+		'app/**/*.html'
+
+], { base: 'app' })
+.pipe(dest('dist'));
 }
 
-function deploy() {
-	return src('app/')
-	.pipe(rsync({
-		root: 'app/',
-		hostname: 'username@yousite.com',
-		destination: 'yousite/public_html/',
-		include: [/* '*.htaccess' */], // Included files to deploy,
-		exclude: [ '**/Thumbs.db', '**/*.DS_Store' ],
-		recursive: true,
-		archive: true,
-		silent: false,
-		compress: true
-	}))
+function cleanDist() {
+	return del('dist/**/*', { force: true })
+}
+
+function cleanImg() {
+	return del('app/img/dest/**/*', { force: true })
 }
 
 function startwatch() {
@@ -85,10 +86,10 @@ function startwatch() {
 	watch(`app/**/*.{${fileswatch}}`, { usePolling: true }).on('change', browserSync.reload)
 }
 
-exports.assets   = series(cleanimg, scripts, images)
+
 exports.scripts  = scripts
 exports.styles   = styles
+exports.cleanImg = cleanImg 
 exports.images   = images
-exports.cleanimg = cleanimg
-exports.deploy   = deploy
-exports.default  = series(scripts, images, styles, parallel(browsersync, startwatch))
+exports.build 	 = series(cleanDist, images, scripts, styles, buildCopy)
+exports.default  = series(images, scripts, styles, parallel(browsersync, startwatch))
