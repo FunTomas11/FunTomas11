@@ -1,0 +1,71 @@
+// USER VARIABLES SECTION
+
+accent = #2196f3 // Accent Color
+disabled = #d3d3d3
+fontsize = 16px // Body Font Size
+textcolor = #333 // Text Color
+system = -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+poppins = 'Poppins', sans-serif
+
+//IMPORT WEB FONTS SECTION
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap')
+
+// IMPORT SECTION
+
+// @import '/node_modules/bootstrap/dist/css/bootstrap-reboot.min.css' // Bootstrap Reboot collection
+// @import '/node_modules/bootstrap/dist/css/bootstrap-grid.min.css' // Optional Bootstrap Grid
+
+
+// FONTS LOAD SECTION
+
+font(fname, fstyle, fweight, furl)
+	@font-face
+		font-family fname
+		font-style fstyle
+		font-weight fweight
+		// font-display swap // Uncomment to initially display system fonts
+		src local(fname), url(furl) format('woff2')
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder
+	color #666
+
+::selection
+	background-color accent
+	color #fff
+
+
+input, textarea
+	outline none
+	&:focus:required:invalid
+		border-color red
+	&:required:valid
+		border-color green
+
+body
+	font-family poppins
+	font-size fontsize
+	min-width 320px
+	position relative
+	line-height 1.65
+	overflow-x hidden
+	color textcolor
+
+
+
+
+*
+	margin 0
+	padding 0
+	box-sizing border-box
+	scroll-behavior smooth
+
+::-webkit-scrollbar 
+	width 0px
+	background rgba(255, 255, 255, 0.0)
+
+html
+	scrollbar-width none
+
+

@@ -1,0 +1,276 @@
+@import _config
+@import _keyframes
+
+
+header, .banner
+	user-select none
+
+section
+	padding 100px
+
+.banner
+	-webkit-perspective: 1000;
+	position relative
+	min-height 100vh
+	background url(../images/dest/banner2.png)
+	background-size cover
+	background-position right 
+	display flex
+	justify-content space-between
+	align-items center
+	h2
+		font-size 3em
+		color #fff
+		font-weight 500
+		line-height 1.5em
+		span
+			font-size 1.5em
+			font-weight 700
+	h3
+		font-size 1.5em
+		color #ffffff
+		font-weight 500
+
+
+.btn
+	position relative
+	background-color accent
+	display inline-block
+	color #ffffff
+	margin 20px 0 0 0
+	padding 10px 30px
+	font-size 18px
+	text-transform uppercase
+	text-decoration none
+	letter-spacing 2px
+	font-weight 500
+	border-radius 3px
+	&_jittery 
+		animation jittery 4s infinite
+		animation-delay 5s
+	&_disabled
+		cursor default
+		pointer-events none       
+		text-decoration none
+		background-color disabled
+
+
+		
+
+
+header
+	position fixed
+	top 0
+	left 0
+	width 100%
+	padding 40px 100px
+	z-index 3
+	display flex
+	justify-content space-between
+	align-items center
+	transition 0.5s
+	&.sticky
+		background #ffffff
+		padding 20px 100px
+		box-shadow 0 5px 20px rgba(0, 0, 0, .1)
+		.logo a,
+		ul li a
+			color #111111
+			transition .3s
+			&:hover
+				color accent
+
+
+	
+
+	.logo a
+		color #ffffff
+		font-size 24px
+		text-transform uppercase
+		text-decoration none
+		font-weight 700
+		letter-spacing 2px
+	ul
+		position relative
+		display flex
+		li
+			position relative
+			list-style none
+			a
+				position relative
+				display inline-block
+				margin 0px 15px
+				color #ffffff
+				text-decoration none
+				&::after
+					content ''
+					position absolute
+					bottom -8px
+					left 0
+					border-radius 20%
+					border-bottom 4px solid #fff
+					width 0%
+					transition width .8s ease
+					-webkit-transform: translate3d(0,0,0);
+				&:hover 
+					&::after
+						width 100%
+						
+
+.heading
+	width 100%
+	text-align center
+	margin-bottom 30px
+	color #111111
+	h2
+		font-weight 600
+		font-size 30px
+	&_white
+		color #ffffff
+
+
+.content
+	display flex
+	justify-content space-between
+	&__box
+		padding 0 30px 0 0
+		h3
+			font-size 24px
+			margin-bottom 10px
+
+.w50
+	min-width 50%
+img 
+	max-width 100%
+
+.services
+	background-color #000000
+	.content
+		display flex
+		justify-content center
+		flex-wrap wrap
+		flex-direction row
+		.services__box
+			padding 40px
+			background-color #222222
+			color #ffffff
+			max-width 340px
+			margin 20px
+			text-align center
+			transition .5s
+			h2
+				font-size 20px
+				font-weight 600
+			img 
+				min-width 80px
+				filter invert(1)
+			&:hover
+				background-color accent
+
+.work .content
+	display grid
+	grid-template 1fr 1fr / 1fr 1fr
+
+	.work__box
+		padding 20px
+
+.testimonial
+	background-color #f7f7f7
+	.content
+		display flex
+		justify-content space-between
+		flex-wrap wrap
+		.testimonial__box
+			max-width calc(50% - 40px)
+			padding 60px 40px
+			margin 20px
+			background-color accent
+			p
+				color #ffffff
+				font-style italic
+				font-style 16px
+				font-weight 300
+			h3
+				margin 40px 0 0 0
+				text-align end
+				color #ffffff
+				font-weight 600
+				font-size 20px
+				line-height 1em
+				span
+					font-size 14px
+					font-weight 400
+
+.contact
+	background-color #111111
+
+
+.form__box
+	min-width 60%
+	form
+		display flex
+		flex-direction column
+		h3
+			color #ffffff
+			font-size 20px
+			font-weight 500
+			margin 0 0 10px 0
+		input, textarea
+			margin-bottom 20px
+			padding 15px
+			font-size 16px
+			background-color transparent
+			border none
+			outline none
+			background-color #222222
+			color #ffffff
+			resize none
+			&::placeholder
+				color #999
+		input[type="submit"]
+			min-width 100px
+			background-color accent
+			cursor pointer
+			text-transform uppercase
+			letter-spacing 2px
+
+		textarea
+			min-height 200px
+
+
+.contactInfo 
+	min-width 40%
+	&__box
+		position relative
+		.box
+			position relative
+			padding 20px 0
+			display flex
+			.icon
+				min-width 40px
+				padding 4px 0 0 0
+				color #ffffff
+				display flex
+				justify-content center
+				align-items flex-start
+				font-size 24px
+			.text
+				display flex
+				margin 0 0 0 20px
+				font-size 16px
+				color #ffffff
+				flex-direction column
+				font-weight 300
+				h3
+					font-weight 500
+					color accent
+					margin-bottom 0
+
+	h3
+		color #ffffff
+		font-size 20px
+		font-weight 500
+		margin 0 0 10px 0
+	
+
+@import _media

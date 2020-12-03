@@ -1,0 +1,97 @@
+@media (max-width 991px)
+	header,
+	header.sticky
+		padding 20px 50px
+
+
+	header ul li a
+		color #111111
+		font-size 24px
+		margin 10px
+	.menu
+		position fixed
+		top 75px
+		left -100%
+		display block
+		padding 100px 50px
+		text-align center
+		width 100%
+		height 100vh
+		background-color #ffffff
+		transition .5s
+		z-index 2
+		border-top 1px solid rgba(0, 0, 0, .2)
+		&.active
+			left 0
+
+	.toggle
+		width 40px
+		height 40px
+		background url(../images/dest/menu.png)
+		background-position center
+		background-repeat no-repeat
+		background-size 30px
+		cursor pointer
+		&.active
+			background url(../images/dest/close.png)
+			background-position center
+			background-repeat no-repeat
+			background-size 25px
+			cursor pointer
+
+	header.sticky .toggle
+		filter invert(1)
+
+	section 
+		padding 100px 50px
+
+	.banner
+			padding 150px 50px 100px
+			h2
+				font-size 1.5em
+			h3
+				font-size 1em
+	.btn
+		margin-top 10px
+		padding 10px 20px
+		font-size 16px
+	
+	.heading h2
+		font-size 24px
+
+	.content__box h3
+		font-size 20px
+	.content
+		flex-direction column
+
+	.w50
+		margin-bottom 20px
+
+	.services .content .services__box
+		margin 10px		
+	.work .content .work__box
+		width 100%
+		padding 10px
+
+	.testimonial .content .testimonial__box
+		max-width calc(100%  - 20px)
+		padding 40px 20px
+		margin 10px
+		h3
+			margin-top 20px
+	.contactInfo
+		margin 20px 0
+
+@media (max-width 600px)
+	header,
+	header.sticky
+		padding 20px 20px
+
+	.banner
+		padding 150px 20px 100px
+
+	section 
+		padding 100px 20px
+	.work .content
+		display grid
+		grid-template 1fr / 1fr
