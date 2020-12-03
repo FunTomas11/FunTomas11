@@ -1,3 +1,7 @@
+import $ from 'jquery'; 
+window.jQuery = $; 
+window.$ = $ // import module example (npm i -D jquery)
+
 window.addEventListener('scroll', () => {
 	const header = document.querySelector('header');
 	header.classList.toggle('sticky', window.scrollY > 0);
@@ -23,4 +27,4 @@ function test()
 }
 
 
-$('html').hide();
+// $('html').hide();	
