@@ -31,7 +31,6 @@ section
 		color #ffffff
 		font-weight 500
 
-
 .btn
 	position relative
 	background-color accent
@@ -55,9 +54,6 @@ section
 		background-color disabled
 
 
-		
-
-
 header
 	position fixed
 	top 0
@@ -79,9 +75,9 @@ header
 			transition .3s
 			&:hover
 				color accent
-
-
-	
+			&.active
+				color accent
+				transition .3s
 
 	.logo a
 		color #ffffff
@@ -116,7 +112,6 @@ header
 					&::after
 						width 100%
 						
-
 .heading
 	width 100%
 	text-align center
@@ -143,14 +138,14 @@ header
 img 
 	max-width 100%
 
-.services
+.skills
 	background-color #000000
 	.content
 		display flex
 		justify-content center
 		flex-wrap wrap
 		flex-direction row
-		.services__box
+		.skills__box
 			padding 40px
 			background-color #222222
 			color #ffffff
