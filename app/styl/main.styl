@@ -75,9 +75,6 @@ header
 			transition .3s
 			&:hover
 				color accent
-			&.active
-				color accent
-				transition .3s
 
 	.logo a
 		color #ffffff
@@ -86,31 +83,33 @@ header
 		text-decoration none
 		font-weight 700
 		letter-spacing 2px
-	ul
+	.menu
 		position relative
 		display flex
 		li
 			position relative
 			list-style none
-			a
-				position relative
-				display inline-block
-				margin 0px 15px
-				color #ffffff
-				text-decoration none
+		&__button
+			position relative
+			display inline-block
+			margin 0px 15px
+			color #ffffff
+			text-decoration none
+			&_active
+				color accent !important
+			&::after
+				content ''
+				position absolute
+				bottom -8px
+				left 0
+				border-radius 20%
+				border-bottom 4px solid #fff
+				width 0%
+				transition width .8s ease
+				-webkit-transform: translate3d(0,0,0);
+			&:hover 
 				&::after
-					content ''
-					position absolute
-					bottom -8px
-					left 0
-					border-radius 20%
-					border-bottom 4px solid #fff
-					width 0%
-					transition width .8s ease
-					-webkit-transform: translate3d(0,0,0);
-				&:hover 
-					&::after
-						width 100%
+					width 100%
 						
 .heading
 	width 100%

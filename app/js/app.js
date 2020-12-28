@@ -15,18 +15,13 @@ $(document).on('scroll', function() {
 
 	for(let i = 1; i < sections.length; i++)
 	{	
-		if ( pos >= $(sections[i]).position().top)	{
-				
-			$(buttons[i]).css('color', '#2196f3');
-		}
-	
-		if ( $(this).scrollTop() >= $(sections[i]).position().top + $(sections[i]).height() || pos < $(sections[i]).position().top )
-			(!header.classList.contains('sticky')) ? $(buttons[i]).css('color', 'white') : $(buttons[i]).css('color', '#111'); // menu buttons color change
+		if ( pos >= $(sections[i]).position().top)				
+			buttons[i].classList.add('menu__button_active');
 		
+		if ( $(this).scrollTop() >= $(sections[i]).position().top + $(sections[i]).height() || pos < $(sections[i]).position().top )
+			buttons[i].classList.remove('menu__button_active');
 	}
 	
-
-
 });
 
 window.toggleMenu = () => {
