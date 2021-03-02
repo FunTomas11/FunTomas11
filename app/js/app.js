@@ -8,23 +8,14 @@ window.addEventListener('scroll', () => {
 
 });
 
-function toggleMenu() {
+window.toggleMenu = () => {
 	const menuToggle = document.querySelector('.toggle');
 	const menu = document.querySelector('.menu');
 	menuToggle.classList.toggle('active');
 	menu.classList.toggle('active');
 }
 
-function test()
-{
-	let buttons = document.querySelectorAll('header > ul > li > a');
-	for (let i = 0; i < 6; i++)
-	{
-		buttons[i].style.color = "red";
-		console.log('For, i=' + i);
-	}
 
-}
 
 
 // $('html').hide();	
