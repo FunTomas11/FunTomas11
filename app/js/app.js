@@ -16,10 +16,10 @@ $(document).on('scroll', function() {
 	for(let i = 1; i < sections.length; i++)
 	{	
 		if ( pos >= $(sections[i]).position().top)				
-			buttons[i].classList.add('menu__button_active');
+			buttons[i].classList.add('button_active');
 		
 		if ( $(this).scrollTop() >= $(sections[i]).position().top + $(sections[i]).height() || pos < $(sections[i]).position().top )
-			buttons[i].classList.remove('menu__button_active');
+			buttons[i].classList.remove('button_active');
 	}
 	
 });
