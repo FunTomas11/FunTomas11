@@ -21,12 +21,12 @@ function browsersync() {
 function scripts() {
 	return src('app/js/app.js')
 	.pipe(webpack({
-		mode: 'production',
+		mode: 'development',
 		module: {
 			rules: [
 				{
 					test: /\.(js)$/,
-					exclude: /(node_modules)/,
+					exclude: /(node_modules)/,	
 					loader: 'babel-loader',
 					query: {
 						presets: ['@babel/env']
