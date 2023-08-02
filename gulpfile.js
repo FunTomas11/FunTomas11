@@ -26,10 +26,12 @@ function scripts() {
 			rules: [
 				{
 					test: /\.(js)$/,
-					exclude: /(node_modules)/,	
-					loader: 'babel-loader',
-					query: {
-						presets: ['@babel/env']
+					exclude: /(node_modules)/,
+					use: {
+						loader: 'babel-loader',
+						options: {
+							presets: ['@babel/env']
+						}
 					}
 				}
 			]
