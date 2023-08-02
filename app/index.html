@@ -2,142 +2,196 @@
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>FunTomas</title>
-	<meta name="description" content="Personal portfolio">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-		integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/app.min.css">
+    <meta charset="utf-8">
+    <title>FunTomas</title>
+    <meta name="description" content="Personal portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
-	<header>
-		<div class="logo"><a href="#home">Krainiev</a></div>
-		<div class="toggle" onclick="toggleMenu()"></div>
-		<ul class="menu">
-			<li><a href="#home"  onclick="toggleMenu()">Home</a></li>
-			<li><a href="#about"  onclick="toggleMenu()">About</a></li>
-			<li><a href="#skills"  onclick="toggleMenu()">Skills</a></li>
-			<li><a href="#work"  onclick="toggleMenu()">Work</a></li>
-			<li><a href="#testimonial"  onclick="toggleMenu()">Testimonial</a></li>
-			<li><a href="#contact"  onclick="toggleMenu()">Contact</a></li>
-		</ul>
-	</header>
-	<section class="banner" id="home">
-		<div class="banner__box">
-			<h2>Hello, I'm<br><span>Artem.</span></h2>
-			<h3>Continually evolving Web Developer</h3>
-			<a href="#about" class="btn btn_jittery">About Me</a>
-		</div>
+<header>
+    <div class="logo"><a href="#home">Krainiev</a></div>
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#work" onclick="toggleMenu()">Work</a></li>
+        <!--			<li><a href="#testimonial"  onclick="toggleMenu()">Testimonial</a></li>-->
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </ul>
+</header>
+<section class="banner" id="home">
+    <div class="banner__box">
+        <h2>Hello, I'm<br><span>Artem.</span></h2>
+        <h3>Continually evolving Web Developer</h3>
+        <a href="#about" class="btn btn_jittery">About Me</a>
+    </div>
 
-	</section>
-	<section class="about" id="about">
-		<div class="heading">
-			<h2>About Me</h2>
-		</div>
-		<div class="content">
-			<div class="content__box">
-				<h3>I am a Web Developer but also an interesting person</h3>
-				<ul>
-					<li><strong>Experienced Front-End Developer:</strong> With over 2 years of professional experience, I have specialized in front-end development, where I primarily work with Angular to create interactive and engaging remote learning applications. As the leader of the frontend team, I have successfully contributed to building user-centric interfaces and collaborating with my team to deliver high-quality products.</li>
-					<li><strong>Aspiring FullStack Developer:</strong> Alongside my front-end expertise, I am determined to expand my skills as a .NET developer and aim to become a well-rounded FullStack Developer in the future. My curiosity and enthusiasm drive me to explore various technologies and frameworks, seeking opportunities to broaden my skillset.</li>
-					<li><strong>Educational Background:</strong> Computer Science degree, laying a solid foundation for my software development journey. Committed to continuous learning and staying updated with the latest industry trends.</li>
-					<li><strong>Diverse Interests:</strong> Outside the world of programming, I enjoy embracing diverse interests. I find solace in traveling, as it provides me with the opportunity to experience new cultures and broaden my perspectives. Music is another passion of mine, and I often find myself engrossed in singing and playing the guitar, which brings both relaxation and creative expression to my life.</li>
-					<li><strong>Arduino Enthusiast:</strong> As a hobbyist, I delve into the fascinating realm of Arduino projects. This pursuit allows me to merge my technical skills with creativity, leading to the creation of unique and innovative projects. Exploring the limitless possibilities with Arduino keeps my creativity flowing and adds a sense of excitement to my personal projects.</li>
-				</ul>
-			</div>
-			<div class="content__image">
-				<img src="img/dest/krakow.jpg" class="img" alt="img1">
-			</div>
-		</div>
-	</section>
-	<section class="skills" id="skills">
-		<div class="heading heading_white">
-			<h2>Professional Skills</h2>
-			<p><i>"Success is not the result of one skill, but the seamless integration of many."</i> - Unknown</p>
-		</div>
-		<div class="content" id="content">
-			<div class="skills__box">
-				<div class="skills__header">
-					<img src="img/dest/web-programming.png" alt="Web Design">
-					<h2>Web Development</h2>
-				</div>
-				<ul>
-					<li><strong>Front-End Development:</strong> Proficient in HTML, CSS, and JavaScript. Skilled in building responsive and user-friendly interfaces using modern frameworks like Angular.</li>
-					<li><strong>Back-End Development:</strong> Familiar with .NET technologies, including ASP.NET, C#, and RESTful APIs, to create robust and efficient server-side applications.</li>
-					<li><strong>FullStack Proficiency:</strong> Able to seamlessly integrate front-end and back-end components, ensuring a smooth end-to-end development process.</li>
-				</ul>
-			</div>
-			<div class="skills__box">
-				<div class="skills__header">
-					<img src="img/dest/motherboard.png" alt="Web Design">
-					<h2>Microcontrollers programming</h2>
-				</div>
-				<ul>
-					<li><strong>In-depth Knowledge:</strong> Experienced in programming and configuring controllers for various applications, ensuring optimal performance and functionality.</li>
-					<li><strong>Embedded Systems:</strong> Skilled in developing firmware and software for microcontrollers and IoT devices.</li>
-					<li><strong>Robotics:</strong> Proficient in programming controllers for robotic systems, enabling automation and control in diverse environments.</li>
-				</ul>
-			</div>
-			<div class="skills__box">
-				<div class="skills__header">
-					<img src="img/dest/infrastructure.png" alt="Database Management">
-					<h2>Database Management</h2>
-				</div>
-				<ul>
-					<li><strong>Database Design:</strong> Able to design efficient database structures, optimizing data storage and retrieval for applications.</li>
-					<li><strong>SQL and NoSQL:</strong> Proficient in working with SQL databases like MySQL and PostgreSQL, as well as NoSQL databases like MongoDB.</li>
-					<li><strong>Data Modeling:</strong> Experienced in creating data models that align with application requirements, ensuring data integrity and scalability.</li>
-				</ul>
-			</div>
-			<div class="skills__box">
-				<div class="skills__header">
-					<img src="img/dest/devops.png" alt="Continuous Integration and Deployment (CI/CD)">
-					<h2>Continuous Integration and Deployment (CI/CD)</h2>
-				</div>
-				<ul>
-					<li><strong>Automation:</strong> Proficient in setting up CI/CD pipelines to automate the build, testing, and deployment processes, facilitating faster and more reliable software delivery.</li>
-				</ul>
-			</div>
-			<div class="skills__box">
-				<div class="skills__header">
-					<img src="img/dest/idea.png" alt="Problem Solving">
-					<h2>Problem Solving</h2>
-				</div>
-				<ul>
-					<li><strong>Analytical Thinking:</strong> Possess strong problem-solving skills, breaking down complex issues and devising effective solutions.</li>
-					<li><strong>Adaptability:</strong> Able to quickly adapt to new challenges and technologies, continuously improving skills and knowledge.</li>
-				</ul>
-			</div>
-			<div class="skills__box">
-				<div class="skills__header">
-					<img src="img/dest/developing.png" alt="Problem Solving">
-					<h2>Versatile Development Expertise</h2>
-				</div>
-				<ul>
-					<li><strong>Mobile App Development:</strong> Proficient in creating mobile applications for enhanced user experiences.</li>
-					<li><strong>Graphic Mockups:</strong> Skilled in drawing visual design concepts to effectively communicate ideas.</li>
-					<li><strong>Diverse Technology Exposure:</strong> Experienced with Python, PHP, Java, Vue.js, Processing, and more.</li>
-					<li><strong>Adaptability:</strong> Able to excel in various project requirements and unique challenges.</li>
-					<li><strong>Innovative Solutions:</strong> Embracing creativity to deliver exceptional results across different development facets.</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+</section>
+<section class="about" id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+    </div>
+    <div class="content">
+        <div class="content__box">
+            <h3>I am a Web Developer but also an interesting person</h3>
+            <ul>
+                <li><strong>Experienced Front-End Developer:</strong> With over 2 years of professional experience, I
+                    have specialized in front-end development, where I primarily work with Angular to create interactive
+                    and engaging remote learning applications. As the leader of the frontend team, I have successfully
+                    contributed to building user-centric interfaces and collaborating with my team to deliver
+                    high-quality products.
+                </li>
+                <li><strong>Aspiring FullStack Developer:</strong> Alongside my front-end expertise, I am determined to
+                    expand my skills as a .NET developer and aim to become a well-rounded FullStack Developer in the
+                    future. My curiosity and enthusiasm drive me to explore various technologies and frameworks, seeking
+                    opportunities to broaden my skillset.
+                </li>
+                <li><strong>Educational Background:</strong> Computer Science degree, laying a solid foundation for my
+                    software development journey. Committed to continuous learning and staying updated with the latest
+                    industry trends.
+                </li>
+                <li><strong>Diverse Interests:</strong> Outside the world of programming, I enjoy embracing diverse
+                    interests. I find solace in traveling, as it provides me with the opportunity to experience new
+                    cultures and broaden my perspectives. Music is another passion of mine, and I often find myself
+                    engrossed in singing and playing the guitar, which brings both relaxation and creative expression to
+                    my life.
+                </li>
+                <li><strong>Arduino Enthusiast:</strong> As a hobbyist, I delve into the fascinating realm of Arduino
+                    projects. This pursuit allows me to merge my technical skills with creativity, leading to the
+                    creation of unique and innovative projects. Exploring the limitless possibilities with Arduino keeps
+                    my creativity flowing and adds a sense of excitement to my personal projects.
+                </li>
+            </ul>
+        </div>
+        <div class="content__image">
+            <img src="img/dest/krakow.jpg" class="img" alt="img1">
+        </div>
+    </div>
+</section>
+<section class="skills" id="skills">
+    <div class="heading heading_white">
+        <h2>Professional Skills</h2>
+        <p><i>"Success is not the result of one skill, but the seamless integration of many."</i> - Unknown</p>
+    </div>
+    <div class="content" id="content">
+        <div class="skills__box">
+            <div class="skills__header">
+                <img src="img/dest/web-programming.png" alt="Web Design">
+                <h2>Web Development</h2>
+            </div>
+            <ul>
+                <li><strong>Front-End Development:</strong> Proficient in HTML, CSS, and JavaScript. Skilled in building
+                    responsive and user-friendly interfaces using modern frameworks like Angular.
+                </li>
+                <li><strong>Back-End Development:</strong> Familiar with .NET technologies, including ASP.NET, C#, and
+                    RESTful APIs, to create robust and efficient server-side applications.
+                </li>
+                <li><strong>FullStack Proficiency:</strong> Able to seamlessly integrate front-end and back-end
+                    components, ensuring a smooth end-to-end development process.
+                </li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <div class="skills__header">
+                <img src="img/dest/motherboard.png" alt="Web Design">
+                <h2>Microcontrollers programming</h2>
+            </div>
+            <ul>
+                <li><strong>In-depth Knowledge:</strong> Experienced in programming and configuring controllers for
+                    various applications, ensuring optimal performance and functionality.
+                </li>
+                <li><strong>Embedded Systems:</strong> Skilled in developing firmware and software for microcontrollers
+                    and IoT devices.
+                </li>
+                <li><strong>Robotics:</strong> Proficient in programming controllers for robotic systems, enabling
+                    automation and control in diverse environments.
+                </li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <div class="skills__header">
+                <img src="img/dest/infrastructure.png" alt="Database Management">
+                <h2>Database Management</h2>
+            </div>
+            <ul>
+                <li><strong>Database Design:</strong> Able to design efficient database structures, optimizing data
+                    storage and retrieval for applications.
+                </li>
+                <li><strong>SQL and NoSQL:</strong> Proficient in working with SQL databases like MySQL and PostgreSQL,
+                    as well as NoSQL databases like MongoDB.
+                </li>
+                <li><strong>Data Modeling:</strong> Experienced in creating data models that align with application
+                    requirements, ensuring data integrity and scalability.
+                </li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <div class="skills__header">
+                <img src="img/dest/devops.png" alt="Continuous Integration and Deployment (CI/CD)">
+                <h2>Continuous Integration and Deployment (CI/CD)</h2>
+            </div>
+            <ul>
+                <li><strong>Automation:</strong> Proficient in setting up CI/CD pipelines to automate the build,
+                    testing, and deployment processes, facilitating faster and more reliable software delivery.
+                </li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <div class="skills__header">
+                <img src="img/dest/idea.png" alt="Problem Solving">
+                <h2>Problem Solving</h2>
+            </div>
+            <ul>
+                <li><strong>Analytical Thinking:</strong> Possess strong problem-solving skills, breaking down complex
+                    issues and devising effective solutions.
+                </li>
+                <li><strong>Adaptability:</strong> Able to quickly adapt to new challenges and technologies,
+                    continuously improving skills and knowledge.
+                </li>
+            </ul>
+        </div>
+        <div class="skills__box">
+            <div class="skills__header">
+                <img src="img/dest/developing.png" alt="Problem Solving">
+                <h2>Versatile Development Expertise</h2>
+            </div>
+            <ul>
+                <li><strong>Mobile App Development:</strong> Proficient in creating mobile applications for enhanced
+                    user experiences.
+                </li>
+                <li><strong>Graphic Mockups:</strong> Skilled in drawing visual design concepts to effectively
+                    communicate ideas.
+                </li>
+                <li><strong>Diverse Technology Exposure:</strong> Experienced with Python, PHP, Java, Vue.js,
+                    Processing, and more.
+                </li>
+                <li><strong>Adaptability:</strong> Able to excel in various project requirements and unique challenges.
+                </li>
+                <li><strong>Innovative Solutions:</strong> Embracing creativity to deliver exceptional results across
+                    different development facets.
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 
-	<section class="work" id="work">
-		<div class="heading">
-			<h2>My Latest Work</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		</div>
-		<div class="content">
-			<div class="work__box"><a href="#"><img src="img/dest/product1.jpg" alt=""></a></div>
-		</div>
-		<div class="heading">
-			<a href="#" class="btn btn_disabled">In progress...</a>
-		</div>
-	</section>
+<section class="work" id="work">
+    <div class="heading">
+        <h2>My Latest Work</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="content">
+        <div class="work__box"><a href="#"><img src="img/dest/product1.jpg" alt=""></a></div>
+    </div>
+    <div class="heading">
+        <a href="#" class="btn btn_disabled">In progress...</a>
+    </div>
+</section>
 
 <!--	<section class="testimonial" id="testimonial">-->
 <!--		<div class="heading">-->
@@ -160,58 +214,58 @@
 <!--		</div>-->
 <!--	</section>-->
 
-	<section class="contact" id="contact">
-		<div class="heading heading_white">
-			<h2>Contact Me</h2>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-		</div>
-		<div class="content">
-			<div class="contactInfo">
-				<h3>Contact Info</h3>
-				<div class="contactInfo__box">
-					<div class="box">
-						<div class="icon">
-							<i class="fa fa-map-marker"></i>
-						</div>
-						<div class="text">
-							<h3>Address</h3>
-							<p>Lublin</p>
-						</div>
-					</div>
-					<div class="box">
-						<div class="icon">
-							<i class="fa fa-phone"></i>
-						</div>
-						<div class="text">
-							<h3>Phone</h3>
-							<p>512 632 011</p>
-						</div>
-					</div>
-					<div class="box">
-						<div class="icon">
-							<i class="fa fa-envelope-o"></i>
-						</div>
-						<div class="text">
-							<h3>Email</h3>
-							<p>krainievlc@gmail.com</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="form__box">
-				<form>
-					<h3>Message Me</h3>
-					<input type="text" name="" placeholder="Full Name">
-					<input type="email" name="" placeholder="Email">
-					<textarea placeholder=" Your Message"></textarea>
-					<input type="submit" class="btn" value="Send">
+<section class="contact" id="contact">
+    <div class="heading heading_white">
+        <h2>Contact Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="content">
+        <div class="contactInfo">
+            <h3>Contact Info</h3>
+            <div class="contactInfo__box">
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>Lublin</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>512 632 011</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon">
+                        <i class="fa fa-envelope-o"></i>
+                    </div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>krainievlc@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form__box">
+            <form>
+                <h3>Message Me</h3>
+                <input type="text" name="" placeholder="Full Name">
+                <input type="email" name="" placeholder="Email">
+                <textarea placeholder=" Your Message"></textarea>
+                <input type="submit" class="btn" value="Send">
 
-				</form>
-			</div>
-		</div>
-	</section>
+            </form>
+        </div>
+    </div>
+</section>
 
-	<script src="js/app.min.js"></script>
+<script src="js/app.min.js"></script>
 </body>
 
 </html>
