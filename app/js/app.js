@@ -49,10 +49,9 @@ window.addEventListener('DOMContentLoaded', async () => {
 
 function preparePreviewElement(preview) {
     const newElement = document.createElement('div');
+    const newLink = `<a href="${preview.url}" target="_blank"><img src="${preview.images[0]}" alt="${preview.title}"></a>`
     newElement.className = 'work__box';
-    const imageElement = document.createElement('img');
-    imageElement.setAttribute('src', preview.images[0])
-    newElement.appendChild(imageElement)
+    newElement.innerHTML = newLink;
     return newElement;
 }
 
