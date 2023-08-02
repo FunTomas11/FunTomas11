@@ -5,6 +5,9 @@
 	"main": "index.js",
 	"author": "FunTomas11 <krainievlc@gmail.com>",
 	"license": "ISC",
+	"scripts": {
+		"start": "gulp"
+	},
 	"devDependencies": {
 		"@babel/core": "^7.12.9",
 		"@babel/preset-env": "^7.12.7",
@@ -19,9 +22,10 @@
 		"gulp-newer": "^1.4.0",
 		"gulp-rename": "^2.0.0",
 		"gulp-stylus": "^2.7.0",
-		"webpack-stream": "^6.1.1"
+		"webpack-stream": "^7.0.0"
 	},
 	"dependencies": {
-		"jquery": "^3.5.1"
+		"jquery": "^3.5.1",
+		"link-preview-js": "^3.0.4"
 	}
 }
