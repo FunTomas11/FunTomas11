@@ -73,6 +73,12 @@
   .w50
     margin-bottom 20px
 
+  .about
+    padding 50px
+
+    .content__image
+      margin-top 20px
+
   .skills .content .skills__box
     gap 10px
 
@@ -88,8 +94,12 @@
     h3
       margin-top 20px
 
-  .contactInfo
+  .contact-info
     margin 20px 0
+    display flex
+    justify-content space-around
+    align-items center
+
 
 @media (max-width 600px)
   header,
@@ -105,3 +115,7 @@
   .work .content
     display grid
     grid-template 1fr / 1fr
+
+  .contact-info
+    flex-direction column
+    align-items flex-start
