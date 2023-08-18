@@ -263,14 +263,13 @@
                 </div>
             </div>
         </div>
-        <div class="form__box">
-            <form>
+        <div class="form__box" onsubmit="this.submit(); this.reset(); return false;">
+            <form action="https://formspree.io/f/mnqkdqbo" method="post">
                 <h3>Message Me</h3>
-                <input type="text" name="" placeholder="Full Name">
-                <input type="email" name="" placeholder="Email">
-                <textarea placeholder=" Your Message"></textarea>
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="email" name="email" placeholder="Email">
+                <textarea name="message" placeholder="Your Message"></textarea>
                 <input type="submit" class="btn" value="Send">
-
             </form>
         </div>
     </div>
