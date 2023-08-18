@@ -6,7 +6,8 @@
 	"author": "FunTomas11 <krainievlc@gmail.com>",
 	"license": "ISC",
 	"scripts": {
-		"start": "gulp"
+		"start": "gulp",
+		"deploy": "gh-pages --dist 'app' --branch 'release'"
 	},
 	"devDependencies": {
 		"@babel/core": "^7.12.9",
@@ -16,6 +17,7 @@
 		"bootstrap": "^4.5.3",
 		"browser-sync": "^2.26.13",
 		"del": "^6.0.0",
+		"gh-pages": "^6.0.0",
 		"gulp": "^4.0.2",
 		"gulp-autoprefixer": "^7.0.1",
 		"gulp-imagemin": "^7.1.0",
